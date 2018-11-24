@@ -3,6 +3,7 @@ package com.aqitrade.sunglow.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.aqitrade.sunglow.model.Holiday;
 import com.aqitrade.sunglow.service.HolidayService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,6 +23,11 @@ public class HolidayController {
     }
 
 
+    @ApiOperation(
+            nickname = "Get Holiday",
+            value = "get holiday",
+            notes = "get holiday",
+            httpMethod = "GET")
     @GetMapping("/{id}")
     public Holiday get(@PathVariable("id") Integer id){
         return holidayService.get(id);

@@ -53,25 +53,9 @@ spring:
 
 
 #mybatis
-
 mybatis:
   type-aliases-package: com.aqitrade.sunglow.model
 #  config-locations: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
-
-
-#spring common request logging
-#logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
-
-#logbook for logging http request
-#logging.level.org.zalando.logbook: TRACE
-
-#logging.file: logs/sunglow.log
-
-# aop configuration (
-#spring.aop:
-#  auto: true
-#  proxy-target-class: false
-
