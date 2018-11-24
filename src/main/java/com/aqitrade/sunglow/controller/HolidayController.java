@@ -1,5 +1,6 @@
 package com.aqitrade.sunglow.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.aqitrade.sunglow.model.Holiday;
 import com.aqitrade.sunglow.service.HolidayService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,25 @@ public class HolidayController {
         System.out.println(holidayID + ", " + countryCode + ", " + holidayName);
     }
 
+    @ResponseBody
+    @RequestMapping(value = "/add2", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
+    public String addNew2(@RequestBody JSONObject jsonParam){
+
+        // 直接将json信息打印出来
+        System.out.println(jsonParam.toJSONString());
+
+
+        // 将获取的json数据封装一层，然后在给返回
+        JSONObject result = new JSONObject();
+        result.put("msg", "ok");
+        result.put("method", "json");
+        result.put("data", jsonParam);
+        result.put("holidays", holidayService.getAllHolidays());
+
+        return result.toJSONString();
+
+    }
+
 
     @ResponseBody
     @RequestMapping(value = "/add3", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
@@ -56,8 +76,14 @@ public class HolidayController {
         jsonParam.keySet().stream().forEach(System.out::println);
         jsonParam.values().forEach(v -> System.out.println(v));
 
+        // 将获取的json数据封装一层，然后在给返回
+        JSONObject result = new JSONObject();
+        result.put("msg", "ok");
+        result.put("method", "json");
+        result.put("data", jsonParam);
+        result.put("holidays", holidayService.getAllHolidays());
 
-        return null;
+        return result.toJSONString();
 
     }
 
