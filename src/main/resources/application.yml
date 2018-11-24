@@ -59,3 +59,15 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
+
+
+#spring common request logging
+#logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+#logbook for logging http request
+#logging.level.org.zalando.logbook: TRACE
+
+# aop configuration (
+#spring.aop:
+#  auto: true
+#  proxy-target-class: false
