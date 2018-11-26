@@ -164,12 +164,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.jeesite</groupId>
-            <artifactId>jeesite-framework</artifactId>
-            <version>4.0.7-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
