@@ -19,7 +19,7 @@ public class HolidayController {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public List<Holiday> allHolidays(){
-        return holidayService.getAllHolidays();
+        return holidayService.list();
     }
 
 
@@ -30,7 +30,7 @@ public class HolidayController {
             httpMethod = "GET")
     @GetMapping("/{id}")
     public Holiday get(@PathVariable("id") Integer id){
-        return holidayService.get(id);
+        return holidayService.getById(id);
     }
 
 

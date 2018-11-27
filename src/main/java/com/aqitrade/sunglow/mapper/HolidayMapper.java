@@ -15,6 +15,6 @@ public interface HolidayMapper extends BaseMapper<Holiday> {
     @Select("select * from holiday")
     List<Holiday> allHolidays();
 
-    Holiday get(Integer id);
+    Holiday getById(Integer id);
 
 }

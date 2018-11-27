@@ -12,7 +12,7 @@
         <!--<result column="remark" property="remark"/>-->
     <!--</resultMap>-->
 
-    <select id="get" parameterType="java.lang.Integer" resultType="Holiday">
+    <select id="getById" parameterType="java.lang.Integer" resultType="Holiday">
 		SELECT * FROM holiday WHERE holiday_id = #{id}
 	</select>
 </mapper>
