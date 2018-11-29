@@ -8,8 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
 
-@Mapper
-@Component
 public interface HolidayMapper extends BaseMapper<Holiday> {
 
     @Select("select * from holiday")
