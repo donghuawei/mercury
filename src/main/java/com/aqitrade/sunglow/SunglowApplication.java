@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-//@EnableAutoConfiguration
+@MapperScan({"com.aqitrade.sunglow.mapper"})
 public class SunglowApplication {
 
     public static void main(String[] args) {
