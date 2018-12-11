@@ -125,6 +125,7 @@ public class CodeGenerator {
                         .setSuperServiceImplClass("com.aqitrade.sunglow.service.impl.BaseServiceImpl")
                         // 自定义 controller 父类
                         //.setSuperControllerClass("com.kichun."+packageName+".controller.AbstractController")
+                        //.setSuperControllerClass("com.aqitrade.sunglow.controller.BaseController")
                         // 【实体】是否生成字段常量（默认 false）
                         // public static final String ID = "test_id";
                         // .setEntityColumnConstant(true)
