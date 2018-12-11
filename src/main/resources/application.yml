@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/aqitradetest?characterEncoding=UTF-8&&useSSL=false
+    url: jdbc:mysql://localhost:3306/aqi3?characterEncoding=UTF-8&&useSSL=false
     username: aqidbmaster
     password: aqidbmaster
     druid:
@@ -87,6 +87,11 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
+
+#Shiro configuration
+shiro:
+  loginUrl: "/auth/unauthorized"
+  unauthorizedUrl: "/auth/forbidden"
 
 
 #spring common request logging
