@@ -17,3 +17,20 @@ Spring skeleton project
 ..
 
 ```
+
+
+
+```
+sunglow-core  （com.aqitrade.sunglow.core）
+|—— model
+|—— mapper
+|—— service
+|— — ……
+sunglow-web （com.aqitrade.sunglow.web）
+|—— config
+|—— controller
+|——SunglowWebApplication
+sunglow-state （com.aqitrade.sunglow.state）
+|---
+
+```
