@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.aqitrade.sunglow</groupId>
-    <artifactId>sunglow-root</artifactId>
+    <groupId>com.aqitrade.mercury</groupId>
+    <artifactId>mercury-root</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>sunglow</name>
-    <description>Sunglow project based on Spring Boot</description>
+    <name>mercury</name>
+    <description>Mercury project based on Spring Boot</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,9 +25,9 @@
     </properties>
 
     <modules>
-        <module>sunglow-core</module>
-        <module>sunglow-web</module>
-        <module>sunglow-state</module>
+        <module>mercury-core</module>
+        <module>mercury-web</module>
+        <module>mercury-state</module>
     </modules>
 
 </project>

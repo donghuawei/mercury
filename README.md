@@ -1,4 +1,4 @@
-# sunglow
+# mercury
 Spring skeleton project
 
 ```
@@ -21,16 +21,16 @@ Spring skeleton project
 
 
 ```
-sunglow-core  （com.aqitrade.sunglow.core）
+mercury-core  （com.aqitrade.mercury.core）
 |—— model
 |—— mapper
 |—— service
 |— — ……
-sunglow-web （com.aqitrade.sunglow.web）
+mercury-web （com.aqitrade.mercury.web）
 |—— config
 |—— controller
-|——SunglowWebApplication
-sunglow-state （com.aqitrade.sunglow.state）
+|——MercuryWebApplication
+mercury-state （com.aqitrade.mercury.state）
 |---
 
 ```

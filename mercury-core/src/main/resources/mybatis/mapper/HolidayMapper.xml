@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aqitrade.mercury.core.mapper.HolidayMapper" >
+    <!--<cache />-->
+
+    <!--<resultMap id="holiday" type="Holiday">-->
+        <!--<id column="holiday_id" property="holidayID"/>-->
+        <!--<result column="country_code" property="countryCode"/>-->
+        <!--<result column="holiday_name" property="holidayName"/>-->
+        <!--<result column="start_date" property="startDate" jdbcType="DATE" javaType="java.time.LocalDate" typeHandler="org.apache.ibatis.type.LocalDateTypeHandler"/>-->
+        <!--<result column="end_date" property="endDate" jdbcType="DATE" javaType="java.time.LocalDate" typeHandler="org.apache.ibatis.type.LocalDateTypeHandler"/>-->
+        <!--<result column="remark" property="remark"/>-->
+    <!--</resultMap>-->
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="Holiday">
+		SELECT * FROM holiday WHERE holiday_id = #{id}
+	</select>
+</mapper>

@@ -1,0 +1,40 @@
+
+
+
+
+
+INSERT INTO `permission` VALUES (700,'position all permission',0,'#','position:*',''),(701,'add position',0,'#','position:add',''),(702,'view position',0,'#','position:view',''),(703,'edit position',0,'#','position:edit',''),(704,'remove position',0,'#','position:remove','');
+
+
+
+
+-- ----------------------------
+-- 菜单权限表
+-- ----------------------------
+drop table if exists permission;
+create table permission (
+  permission_id 			int(11) 		not null auto_increment    comment '菜单ID',
+  permission_name 		varchar(50) 	not null 				   comment '菜单名称',
+  parent_id 		int(11) 		default 0 			       comment '父菜单ID',
+  url 				varchar(200) 	default '#'				   comment '请求地址',
+  perms 			varchar(700) 	default '' 				   comment '权限标识',
+  remark 			varchar(500) 	default '' 				   comment '备注',
+  primary key (permission_id)
+) engine=innodb auto_increment=2000 default charset=utf8 comment = '菜单权限表';
+
+
+-- ----------------------------
+-- 角色和权限关联表  角色1-N菜单
+-- ----------------------------
+CREATE TABLE `role_permission` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `role_id` int COMMENT '角色ID',
+  `permission_id` int COMMENT '菜单ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色与权限对应关系';
+
+
+administrator
+executive
+fund_manager
+risk_specialist

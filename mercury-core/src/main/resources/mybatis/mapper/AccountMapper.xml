@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aqitrade.mercury.core.mapper.AccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.aqitrade.mercury.core.model.Account">
+        <id column="account_id" property="accountId" />
+        <result column="name" property="name" />
+        <result column="authentication_id" property="authenticationId" />
+        <result column="password" property="password" />
+        <result column="broker_id" property="brokerId" />
+        <result column="status" property="status" />
+        <result column="cash_qty" property="cashQty" />
+        <result column="account_type" property="accountType" />
+        <result column="value" property="value" />
+        <result column="broker_params" property="brokerParams" />
+        <result column="principle" property="principle" />
+        <result column="highest_value" property="highestValue" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        account_id, name, authentication_id, password, broker_id, status, cash_qty, account_type, value, broker_params, principle, highest_value
+    </sql>
+
+</mapper>
