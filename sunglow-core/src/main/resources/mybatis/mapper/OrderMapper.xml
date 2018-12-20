@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aqitrade.sunglow.core.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.aqitrade.sunglow.core.model.Order">
+        <id column="order_id" property="orderId" />
+        <result column="limit_price" property="limitPrice" />
+        <result column="create_date" property="createDate" />
+        <result column="qty" property="qty" />
+        <result column="direction" property="direction" />
+        <result column="account_id" property="accountId" />
+        <result column="sub_account_id" property="subAccountId" />
+        <result column="instrument_id" property="instrumentId" />
+        <result column="status_message" property="statusMessage" />
+        <result column="expiration_date" property="expirationDate" />
+        <result column="exchange_order_id" property="exchangeOrderId" />
+        <result column="traded_qty" property="tradedQty" />
+        <result column="status" property="status" />
+        <result column="app_id" property="appId" />
+        <result column="sec_type" property="secType" />
+        <result column="order_type" property="orderType" />
+        <result column="tif" property="tif" />
+        <result column="close_today" property="closeToday" />
+        <result column="external" property="external" />
+        <result column="pair_trading_id" property="pairTradingId" />
+        <result column="trading_day" property="tradingDay" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, limit_price, create_date, qty, direction, account_id, sub_account_id, instrument_id, status_message, expiration_date, exchange_order_id, traded_qty, status, app_id, sec_type, order_type, tif, close_today, external, pair_trading_id, trading_day
+    </sql>
+
+</mapper>

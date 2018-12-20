@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aqitrade.sunglow.core.mapper.AppMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.aqitrade.sunglow.core.model.App">
+        <id column="app_id" property="appId" />
+        <result column="user_id" property="userId" />
+        <result column="account_id" property="accountId" />
+        <result column="symbols" property="symbols" />
+        <result column="status" property="status" />
+        <result column="config" property="config" />
+        <result column="result" property="result" />
+        <result column="app_type" property="appType" />
+        <result column="app_name" property="appName" />
+        <result column="create_date" property="createDate" />
+        <result column="start_date" property="startDate" />
+        <result column="initial_fund" property="initialFund" />
+        <result column="value" property="value" />
+        <result column="gain" property="gain" />
+        <result column="risk_control" property="riskControl" />
+        <result column="stop_win" property="stopWin" />
+        <result column="stop_loss" property="stopLoss" />
+        <result column="stop_win_alert" property="stopWinAlert" />
+        <result column="stop_loss_alert" property="stopLossAlert" />
+        <result column="container_id" property="containerId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        app_id, user_id, account_id, symbols, status, config, result, app_type, app_name, create_date, start_date, initial_fund, value, gain, risk_control, stop_win, stop_loss, stop_win_alert, stop_loss_alert, container_id
+    </sql>
+
+</mapper>

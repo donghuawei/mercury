@@ -29,11 +29,36 @@ public class CodeGenerator {
     private static String canonicalPath = "";
 
     //基本包名
-    private static String basePackage = "com.aqitrade.sunglow";
+    private static String basePackage = "com.aqitrade.sunglow.core";
     //作者
     private static String authorName = "Huawei";
     //要生成的表名
-    private static String[] tables = {"account"};
+    private static String[] tables = {
+//            "role",
+            "permission",
+            "role_permission",
+            "user_role",
+            "app",
+//            "app_cache",
+//            "app_container",
+//            "app_liquidation",
+//            "app_record",
+//            "asset",
+//            "bank",
+//            "bank_account",
+//            "broker",
+//            "exchange",
+            "fund",
+            "order",
+            "position"
+    };
+
+    private static String[] existingTables = {
+            "user",
+            "account",
+            "holiday"
+    };
+
     //table前缀
     private static String prefix = "";
 
@@ -84,7 +109,7 @@ public class CodeGenerator {
          * 全局配置
          */
         gen.setGlobalConfig(new GlobalConfig()
-                .setOutputDir( canonicalPath + "/src/main/java")//输出目录
+                .setOutputDir( canonicalPath + "/sunglow-core/src/main/java")//输出目录
                 .setFileOverride(true)// 是否覆盖文件
                 .setActiveRecord(false)// 开启 activeRecord 模式
                 .setEnableCache(false)// XML 二级缓存
