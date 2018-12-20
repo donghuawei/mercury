@@ -27,6 +27,7 @@
     <modules>
         <module>sunglow-core</module>
         <module>sunglow-web</module>
+        <module>sunglow-state</module>
     </modules>
 
 </project>
