@@ -145,7 +145,7 @@
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>3.6.4</version>
+            <version>4.8.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.avro/avro -->
@@ -159,7 +159,7 @@
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor_2.11</artifactId>
-            <version>2.4.8</version>
+            <version>2.4.17</version>
         </dependency>
 
         <dependency>
